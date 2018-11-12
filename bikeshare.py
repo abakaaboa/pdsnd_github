@@ -60,7 +60,6 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
 
-
     return df
 
 
@@ -127,8 +126,6 @@ def trip_duration_stats(df):
     # TO DO: display mean travel time
     average_travel_time = df['Trip Duration'].mean()
     print('Average Trip Duration:', average_travel_time)
-
-
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
